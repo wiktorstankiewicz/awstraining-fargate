@@ -15,7 +15,7 @@ public class NotifyMeService {
     //  1. Inject sentiment detector
     @Autowired
     public NotifyMeService(MessageSender messageSender) {
-
+        this.messageSender = messageSender;
     }
     
     public String notifyMe(NotifyMeDO notifyMe) {
